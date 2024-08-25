@@ -1,14 +1,16 @@
 exports.getRequest = (req, res) => {
   res.status(200);
+  data=req.body
   res.json({
     operation_code: 1,
   });
 };
 
 exports.postRequest = (req, res) => {
-  // console.log(req.body);
+  console.log(req.body);
+  // res.json({data:"hello"})
   const arr = req.body.data;
-  // console.log(arr);
+  console.log(arr);
   let numbers = [];
   let alphabets = [];
   let highest_lowercase_alphabet = [];
